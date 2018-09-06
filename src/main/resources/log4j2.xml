@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Specify the refresh internal in seconds. -->
+<Configuration>
+    <Appenders>
+        <!--file-->
+        <RollingFile name="file" fileName="logs/app.log" append="true"
+                     filePattern="logs/app-%d{yyyy-MM-dd-HH}-%i.log">
+            <PatternLayout pattern="%d %p [%c] - %m%n"/>
+            <Policies>
+                <OnStartupTriggeringPolicy />
+                <SizeBasedTriggeringPolicy size="10 MB"/>
+                <TimeBasedTriggeringPolicy />
+            </Policies>
+        </RollingFile>
+    </Appenders>
+
+
+</Configuration>

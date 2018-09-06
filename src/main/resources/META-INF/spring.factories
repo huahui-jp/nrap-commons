@@ -1,0 +1,14 @@
+# Environment Post Processor
+org.springframework.boot.env.EnvironmentPostProcessor=\
+com.rayfay.bizcloud.core.commons.logging.LoggingEnvironmentPostProcessor
+
+#EnableAutoConfiguration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+        com.rayfay.bizcloud.core.commons.autoconfig.AppBusAutoConfiguration,\
+        com.rayfay.bizcloud.core.commons.autoconfig.AppStartedAutoConfiguration,\
+        com.rayfay.bizcloud.core.commons.autoconfig.DefaultJwtResourceAutoConfiguration,\
+        com.rayfay.bizcloud.core.commons.autoconfig.FixtureAutoConfiguration,\
+        com.rayfay.bizcloud.core.commons.autoconfig.ErrorCodeAutoConfiguration,\
+        com.rayfay.bizcloud.core.commons.autoconfig.SwaggerDocumentAutoConfiguration,\
+        com.rayfay.bizcloud.core.commons.autoconfig.ClientInfoAutoConfiguration
+
